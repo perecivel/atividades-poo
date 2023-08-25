@@ -3,14 +3,14 @@ package codigo;
 import java.time.LocalDate;
 
 public abstract class Pessoa {
-    private int codigo;
-    private String nome;
-    private String endereco;
-    private String telefone;
-    private LocalDate data;
-    private String rg;
-    private String cpf;
-    private LocalDate dataInsercao;
+    protected int codigo;
+    protected String nome;
+    protected String endereco;
+    protected String telefone;
+    protected LocalDate data;
+    protected String rg;
+    protected String cpf;
+    protected LocalDate dataInsercao;
 
     public int getCodigo() {
         return codigo;
