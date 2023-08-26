@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public class Aluno extends Pessoa{
     private String matricula;
     private LocalDate data;
+    
     public String getMatricula() {
         return matricula;
     }
