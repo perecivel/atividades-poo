@@ -2,7 +2,7 @@ package ProjetoEscola.Classes;
 
 import java.time.LocalDate;
 
-public abstract class BasePessoa extends BaseDadosComuns {
+public abstract class BasePessoa extends BaseDadosComuns implements IImprimir {
     protected String endereco;
     protected String telefone;
     

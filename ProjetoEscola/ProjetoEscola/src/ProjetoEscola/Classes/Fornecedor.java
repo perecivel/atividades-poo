@@ -31,5 +31,10 @@ public class Fornecedor extends BasePessoaJuridica{
         this.servico = servico;
         this.dataContrato = dataContrato;
         this.periodoEmMes = periodoEmMes;
+    }
+    @Override
+    public void imprimir() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'imprimir'");
     } 
 }
