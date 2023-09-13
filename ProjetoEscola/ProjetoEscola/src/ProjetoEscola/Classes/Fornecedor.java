@@ -32,9 +32,20 @@ public class Fornecedor extends BasePessoaJuridica{
         this.dataContrato = dataContrato;
         this.periodoEmMes = periodoEmMes;
     }
+
     @Override
     public void imprimir() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimir'");
+        System.out.println("Codigo: " + this.codigo);
+        System.out.println("Nome Fantasia: " + this.nomeFantasia);
+        System.out.println("Endereco: " + this.endereco);
+        System.out.println("Telefone: " + this.telefone);
+        System.out.println("Razao Social: " + this.razaoSocial);
+        System.out.println("CNPJ: " +this.cnpj);
+        System.out.println("Inscricao Estadua: " + this.ie);
+        System.out.println("Data de Insercao" + this.dataInsercao);
+        System.out.println("Data de Abertura: " + this.dataAbertura);
+        System.out.println("Servico: " + this.servico);
+        System.out.println("Data do Contrato: " + this.dataContrato);
+        System.out.println("Periodo em Meses: " + this.dataInsercao);
     } 
 }

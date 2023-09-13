@@ -35,10 +35,8 @@ public class Aluno extends BasePessoaFisica {
         System.out.println("RG: " + this.rg);
         System.out.println("CPF: " +this.cpf);
         System.out.println("Data de Nascimento: " + this.dataNascimento);
-        System.out.println("matricula: " + this.matricula);
+        System.out.println("Matricula: " + this.matricula);
         System.out.println("Data da Matricula: " + this.dataMatricula);
         System.out.println("Data de Insercao: " + this.dataInsercao);
     }
-
-
 }

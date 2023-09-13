@@ -15,10 +15,10 @@ public class Professor extends BaseFuncionario {
   
     public Professor(int codigo, LocalDate dataInsercao, String endereco, String telefone, String nome, String rg,
             String cpf, LocalDate dataNascimento, String cracha, String registro, LocalDate dataVinculoInicial,
-            LocalDate dataVinculoFinal, String registro2, String cadeira) {
+            LocalDate dataVinculoFinal, String cadeira) {
         super(codigo, dataInsercao, endereco, telefone, nome, rg, cpf, dataNascimento, cracha, registro,
                 dataVinculoInicial, dataVinculoFinal);
-        registro = registro2;
+        
         this.cadeira = cadeira;
     }
 
