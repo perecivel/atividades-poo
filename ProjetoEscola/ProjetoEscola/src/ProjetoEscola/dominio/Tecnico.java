@@ -1,25 +1,25 @@
-package ProjetoEscola.Classes;
+package ProjetoEscola.dominio;
 
 import java.time.LocalDate;
 
-public class Professor extends BaseFuncionario {
+public class Tecnico extends BaseFuncionario {
 
-    private String cadeira;
+    private String setor;
 
-    public String getCadeira() {
-        return cadeira;
+    public String getSetor() {
+        return setor;
     }
-    public void setCadeira(String cadeira) {
-        this.cadeira = cadeira;
+    public void setSetor(String setor) {
+        this.setor = setor;
     }
-  
-    public Professor(int codigo, LocalDate dataInsercao, String endereco, String telefone, String nome, String rg,
+    
+
+    public Tecnico(int codigo, LocalDate dataInsercao, String endereco, String telefone, String nome, String rg,
             String cpf, LocalDate dataNascimento, String cracha, String registro, LocalDate dataVinculoInicial,
-            LocalDate dataVinculoFinal, String cadeira) {
+            LocalDate dataVinculoFinal, String setor) {
         super(codigo, dataInsercao, endereco, telefone, nome, rg, cpf, dataNascimento, cracha, registro,
                 dataVinculoInicial, dataVinculoFinal);
-        
-        this.cadeira = cadeira;
+        this.setor = setor;
     }
 
     @Override
@@ -28,13 +28,13 @@ public class Professor extends BaseFuncionario {
         System.out.println("Nome: " + this.nome);
         System.out.println("Endereco: " + this.endereco);
         System.out.println("Telefone: " +this.telefone);
+        System.out.println("Setor: " + this.setor);
         System.out.println("RG:" + this.rg);
         System.out.println("CPF: " + this.cpf);
         System.out.println("Data de Nascimento: " + this.dataNascimento);
         System.out.println("Cracha: " + this.cracha);
         System.out.println("Registro: " + this.registro);
         System.out.println("Data de Insercao: " + this.dataInsercao);
-        System.out.println("Cadeira: " + this.cadeira);
         System.out.println("Data de Vinculo Inicial: " + this.dataVinculoInicial);
         System.out.println("Data de Vinculo Final: " + this.dataVinculoFinal);
     }

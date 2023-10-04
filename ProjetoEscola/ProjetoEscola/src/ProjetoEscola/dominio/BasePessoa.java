@@ -1,4 +1,4 @@
-package ProjetoEscola.Classes;
+package ProjetoEscola.dominio;
 
 import java.time.LocalDate;
 

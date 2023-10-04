@@ -1,4 +1,4 @@
-package ProjetoEscola.Classes;
+package ProjetoEscola.dominio;
 
 public interface IImprimir {
     

@@ -1,20 +1,20 @@
 import java.time.LocalDate;
 
-import ProjetoEscola.Classes.Aluno;
+import ProjetoEscola.dominio.Aluno;
+import ProjetoEscola.repositorio.AlunoRepositorio;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-                Aluno a1 = new Aluno(1, 
-        LocalDate.now(), 
-        "Rua x, 10", 
-        "991234567", 
-        "Mateus", 
-        "321", 
-        "123", 
-        LocalDate.of(1980, 10, 15), 
-        "101", 
-        LocalDate.of(2002, 2, 5));
+    public static void main(String[] args) throws Exception {    
+    AlunoRepositorio repo = new AlunoRepositorio();
+    System.out.println("### Início de Execução. ###");
 
-        a1.imprimir();
+        for (Aluno aluno : repo.ReadAll()){
+            
+            System.out.println("-----------------------------------");
+            aluno.imprimir();   
+        }
+
+     System.out.println("### Final de Execução. ###");        
+
     }
 }
